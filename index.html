@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículum — Alec Beltrán Villavicencio</title>
+  <style>
+    :root{
+      --accent:#0b78d1;
+      --muted:#6b7280;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#111827;line-height:1.5}
+
+    /* HEADER */
+    header{
+      background:var(--accent);
+      color:white;
+      padding:20px 40px;
+      position:sticky;
+      top:0;
+      z-index:100;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    header h1{font-size:20px;}
+    nav a{
+      margin-left:20px;
+      color:white;
+      text-decoration:none;
+      font-size:14px;
+      font-weight:500;
+    }
+    nav a:hover{text-decoration:underline}
+
+    /* MAIN */
+    .container{max-width:960px;margin:30px auto;padding:0 20px}
+    section{margin-bottom:40px}
+    section h2{margin-bottom:12px;color:var(--accent)}
+    p,li{color:var(--muted)}
+
+    /* GRID LAYOUT */
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.06)}
+
+    /* FOOTER */
+    footer{background:#e5e7eb;padding:20px;text-align:center;font-size:14px;color:var(--muted)}
+
+    @media(max-width:700px){
+      .grid{grid-template-columns:1fr}
+      nav a{margin-left:10px;font-size:13px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alec Beltrán Villavicencio</h1>
+    <nav>
+      <a href="#resumen">Inicio</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="resumen">
+      <h2>Resumen</h2>
+      <p>Soy un desarrollador con experiencia en proyectos fullstack que usan Angular en frontend y Node.js/Express en backend. Me interesa crear interfaces limpias, optimizar rendimiento y aplicar buenas prácticas en bases de datos.</p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Desarrollador Fullstack — Recetas Divertidas</h3>
+          <p><em>Angular, Node.js, MongoDB · Proyecto personal</em></p>
+          <p>Diseño e implementación del frontend con Angular, integración con API de recetas, y persistencia de favoritos usando local storage y MongoDB en backend.</p>
+        </div>
+        <div class="card">
+          <h3>Vendedor — Tecsa</h3>
+          <p><em>1 año · Atención al cliente y ventas</em></p>
+          <p>Experiencia en trato con clientes, manejo de transacciones y trabajo en equipo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="educacion">
+      <h2>Educación</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Universidad Tecnológica de Santa Catarina</h3>
+          <p><em>Estudiante de Ingeniería — (fechas)</em></p>
+        </div>
+        <div class="card">
+          <h3>Conalep</h3>
+          <p><em>(Certificación / Carrera)</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Proyectos</h2>
+      <ul>
+        <li>Aplicación Android con Jetpack Compose — login, punto de venta y historial de ventas.</li>
+        <li>Aplicación web "Recetas Divertidas" — Angular + Node.js + MongoDB.</li>
+        <li>Calculadora de fórmula general integrada en página web de empleos técnicos.</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:</strong> <a href="tel:PHONE_NUMBER">PHONE_NUMBER</a></p>
+      <p><strong>Email:</strong> <a href="mailto:EMAIL_ADDRESS">EMAIL_ADDRESS</a></p>
+      <p><strong>Ubicación:</strong> Monterrey, México</p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Alec Beltrán Villavicencio — Currículum Online
+  </footer>
+</body>
+</html>
